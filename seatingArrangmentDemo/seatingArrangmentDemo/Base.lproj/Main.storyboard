@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="seatingArrangmentDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="Doe-Ce-6UG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBz-JP-YXG">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
+                                        <subviews>
+                                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGM-fm-uay">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="414" id="hC9-Ph-rQs"/>
+                                                    <constraint firstAttribute="height" constant="269" id="tMb-R7-4t5"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="FGM-fm-uay" secondAttribute="trailing" id="Ye7-oe-WRT"/>
+                                            <constraint firstAttribute="bottom" secondItem="FGM-fm-uay" secondAttribute="bottom" id="aFo-8K-7Ng"/>
+                                            <constraint firstItem="FGM-fm-uay" firstAttribute="leading" secondItem="lBz-JP-YXG" secondAttribute="leading" id="kAU-tF-OTG"/>
+                                            <constraint firstItem="FGM-fm-uay" firstAttribute="top" secondItem="lBz-JP-YXG" secondAttribute="top" id="zhB-fI-l0S"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lBz-JP-YXG" secondAttribute="bottom" id="Ibn-My-k3X"/>
+                                    <constraint firstItem="lBz-JP-YXG" firstAttribute="top" secondItem="Doe-Ce-6UG" secondAttribute="top" id="Jne-7g-a4s"/>
+                                    <constraint firstAttribute="height" constant="200" id="jrl-XQ-43G"/>
+                                    <constraint firstAttribute="trailing" secondItem="lBz-JP-YXG" secondAttribute="trailing" id="kyF-B4-bMp"/>
+                                    <constraint firstItem="lBz-JP-YXG" firstAttribute="leading" secondItem="Doe-Ce-6UG" secondAttribute="leading" id="x1Y-G5-zbi"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticket booking for Dubai trip....." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeD-YJ-neC">
+                                <rect key="frame" x="20" y="403" width="374" height="90"/>
+                                <fontDescription key="fontDescription" name="KohinoorGujarati-Bold" family="Kohinoor Gujarati" pointSize="30"/>
+                                <color key="textColor" red="0.29793226375717852" green="0.5228050674252247" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habibi...Come to Dubai" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79n-19-RmK">
+                                <rect key="frame" x="20" y="568" width="374" height="45"/>
+                                <fontDescription key="fontDescription" name="KohinoorGujarati-Bold" family="Kohinoor Gujarati" pointSize="30"/>
+                                <color key="textColor" red="0.23143086242628072" green="0.20850779677792933" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.60469978261791513" green="0.7803921568627451" blue="0.77422293891082061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="79n-19-RmK" firstAttribute="top" secondItem="yeD-YJ-neC" secondAttribute="bottom" constant="75" id="DaK-pW-yvj"/>
+                            <constraint firstItem="79n-19-RmK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KeV-NV-NVl"/>
+                            <constraint firstItem="yeD-YJ-neC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KlM-qQ-m1S"/>
+                            <constraint firstItem="Doe-Ce-6UG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L6J-pf-29o"/>
+                            <constraint firstItem="lBz-JP-YXG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" priority="250" id="Qza-vo-t0N"/>
+                            <constraint firstItem="Doe-Ce-6UG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ukz-OK-eJ4"/>
+                            <constraint firstItem="yeD-YJ-neC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fSs-NP-A3g"/>
+                            <constraint firstItem="lBz-JP-YXG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" priority="250" id="fc3-bw-tUV"/>
+                            <constraint firstItem="79n-19-RmK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qVq-ve-Vsy"/>
+                            <constraint firstItem="yeD-YJ-neC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vFN-E6-5U1"/>
+                            <constraint firstItem="Doe-Ce-6UG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vrf-JY-qyC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customView" destination="FGM-fm-uay" id="1Qi-hs-jo7"/>
+                        <outlet property="customViewHeight" destination="tMb-R7-4t5" id="I4p-It-ETB"/>
+                        <outlet property="customViewWidth" destination="hC9-Ph-rQs" id="dmM-Rc-IRm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="54"/>
+        </scene>
+    </scenes>
+</document>
